@@ -1,0 +1,69 @@
+@mixin displayCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin displaySpaceBetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    width: 100%;
+    max-width: 1920px;
+    min-height: 10vh;
+    background-color: transparent;
+    @include displaySpaceBetween();
+    padding: 0 10%;
+    overflow-x: hidden;
+    .header-left { }
+
+    .header-center {
+        form{
+            display: flex;
+            align-items: center;
+            height: 5vh;
+            label{
+                position: relative;
+                input{
+                  width: 500px;
+                  padding: 15px;
+                  border: 1.5px solid #023047;
+                }
+                span {
+                position: absolute;
+                top: 15px;
+                right: 10px;
+                display: flex;
+                align-items: center;
+                color: #999999;
+                }
+            }
+            button{
+                height: 6.5vh;
+                border: 1.5px solid #023047;
+                border-left: none;
+                padding: 0 30px;
+                background-color: #023047;
+                color: #fff;
+            }
+        }
+    }
+
+    .header-right {
+        width: 130px;
+        color: #333333;
+        @include displaySpaceBetween();
+        svg{
+            font-size: 25px;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                transform: scale(1.2);
+                cursor: pointer;
+                color: #023047;
+            }
+        }
+    }
+}

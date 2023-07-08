@@ -1,0 +1,61 @@
+.service-container{
+    padding: 107px 146px;
+    background-color: #f3f3f3;
+    .services-item{
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: flex-start;
+        padding: 7px 11px;
+        align-items: center;
+        img{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+    }
+}
+
+//kolleksiya style
+
+.kalleksiya-container{
+    padding:100px ;
+
+    .kolleksiya-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .hello{
+            position: absolute;
+            width: 200px;
+            top: calc(45%);
+            left: calc(70% - 100px);
+            text-align: center;
+            
+            button{
+                padding: 13px 20px;
+                border: none;
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                background: #023047;
+                color: #fff;
+
+                h2{
+                    font-family: 'Jost';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 26px;
+                    margin: 6px 0;
+                }
+
+            }
+        }
+    }
+}

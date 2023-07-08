@@ -1,0 +1,19 @@
+.btns {
+    width: 40%;
+    margin: auto;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+}
+.driver_web_site{
+    padding: 3vh 10%;
+    .card{
+        .card-img{
+            img{
+                // width: 100%;
+                width: 50vh;
+                height: 50vh;
+            }
+        }
+    }
+}
